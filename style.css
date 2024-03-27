@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Prata', sans-serif;
+
+}
+html{
+    width: 100vw;
+    height: 100vw;
+    font-size: 62.5%;
+}
+
+.content{
+    width: 100vw;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f2e5;
+    padding-left: 10rem;
+}
+.logo{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo img{
+    width: 150px;
+    height: 150px;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.content .menu{
+    width: 80vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu li a{
+    padding: 0.5rem 0.2rem 0.2rem 0.2rem;
+    font-size: 1.5rem;
+    color: #333333;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition:all 200ms ease-in;
+
+}
+.content .menu li a:hover{
+    background-color: #333333;
+    border-bottom:4px solid #faa710;
+    color: #faa710;
+}
+/*fim do menu*/
+/*primeira seção nav bar*/
+
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}   
+/*fim da primeira seção*/
+
+/*slider content*/
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+
+}
+.slider-content input{
+    display: none;
+}
+/*fim da slider content*/
+
+/* inicio do slider-box*/
+.slider-box{
+    width: 25%;
+    height: auto;
+    position: relative;
+    text-align: center;
+}
+.slider-box img{
+    width: 100%;  
+}
+/* fim do slider-box*/
+
+/*nav-manual*/
+.nav-manual , .nav-auto{
+    position: absolute;
+    width: 100%;
+    margin-top: 35%;
+    display: flex;
+    justify-content: center;
+}
+.nav-manual .manual-btn , .nav-auto div{
+    border: 1px solid #faa710;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+
+}
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child){
+    margin-right: 20px;
+}
+.nav-manual .manual-btn:hover{
+    background-color: #faa710;
+
+}
+.geral{
+    width: 70%;
+    height: 143vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background-color: #333333;
+}
+
+section.box{
+    width: 100%;
+    padding: 30px;
+    background-color: #333333;
+    margin-top: 8rem;
+    font-size: 16px;
+    display: flex;
+}
+.sobre-nos{
+    background-color: #f5f2e5;
+    width: 400px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    text-align: justify;
+    transition: 0.2s;
+
+    
+}
+.sobre-nos:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #f5f2e5bb;
+}
+.sobre-nos span{
+    color: #faa710;
+}
+
+.sobre-nos p{
+    text-align: justify;
+}
+
+.imagem{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.imagem img{
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.post-recentes{
+    color: #f5f2e5;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+.post-recentes span{
+    color: #faa710;
+}
+.post-recentes a{
+    color: #faa710;
+}
+.post-recentes li{
+    color: #faa710;
+    padding: 1rem;
+    font-size: 22px;
+    list-style: decimal;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    margin-left: 4rem;
+    background-color: #faa710;
+    height: 2vw;
+    border-radius: 15px;
+    
+
+}
+.pesquisa .pesquisa-txt{
+    font-size: 18px;
+    line-height: 18px;
+    width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.pesquisa.pesquisa-btn{
+    color: #fa1010;
+    width: 80px;
+    height: 80px;
+}

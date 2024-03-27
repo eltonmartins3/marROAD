@@ -1,0 +1,86 @@
+
+/*Section slider*/
+section.slider{
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 0 !important;
+    overflow: hidden;
+}
+/*Fim da Section slider*/
+
+/*Slider Content*/
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+.slider-content input {
+    display: none;
+}
+/*Fim do slider content*/
+
+/*slide-box*/
+.slide-box {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    text-align: center;
+    transition: 2s;
+    margin-top: 0.1rem;
+    background-color: rgb(255, 255, 255);
+}
+
+.slide-box img {
+    width: 40vw;
+    height: 50vh;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+/*Fim do slide-box*/
+
+/*Nav manual*/
+.nav-manual, .nav-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 33rem;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn, .nav-auto div{
+    border: 1px solid #faa710;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 200ms ease-in;
+}
+
+.nav-manual .manual-btn:not(:last-child), .nav-auto div:not(:last-child) {
+    margin-right: 18px;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #faa710;
+}
+/*Fim da Nav manual*/
+
+/*ids radio*/
+#radio1:checked ~ .nav-auto .auto-btn1, #radio2:checked ~ .nav-auto .auto-btn2, #radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #faa710;
+}
+
+#radio1:checked ~ .primeiro {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .primeiro {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .primeiro {
+    margin-left:-50%;
+}
+/*fim das ids radio*/
